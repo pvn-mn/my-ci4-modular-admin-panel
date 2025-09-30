@@ -21,6 +21,11 @@ class CreateUsersTable extends Migration
                 'type' => 'VARCHAR', 
                 'constraint' => 255
             ],
+
+            'role' =>[
+              'type'       => 'ENUM("admin","user")',
+              'default'    => 'user'
+            ],
             'name'          => [
                 'type' => 'VARCHAR', 
                 'constraint' => 100

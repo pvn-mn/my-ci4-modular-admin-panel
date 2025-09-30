@@ -7,23 +7,42 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
     .row.content {height: 550px}
-    
-    /* Set gray background color and 100% height */
+
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
     }
-     
-    /* On small screens, set height to 'auto' for the grid */
+    
     @media screen and (max-width: 767px) {
       .row.content {height: auto;} 
     }
+
   </style>
+
 </head>
 <body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MySystem</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
 
 <nav class="navbar navbar-inverse visible-xs">
   <div class="container-fluid">
@@ -36,6 +55,7 @@
       </button>
       <a class="navbar-brand" href="#">Logo</a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Dashboard</a></li>
@@ -44,11 +64,13 @@
         <li><a href="#">Geo</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
 
 <div class="container-fluid">
   <div class="row content">
+
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">
@@ -60,7 +82,9 @@
     </div>
     <br>
     
+
     <div class="col-sm-9">
+
       <div class="well">
         <h4>Dashboard</h4>
         <p>Some text..</p>
@@ -91,6 +115,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-sm-4">
           <div class="well">
@@ -114,6 +140,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-8">
           <div class="well">
@@ -126,33 +153,11 @@
           </div>
         </div>
       </div>
+
+
     </div>
   </div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-<!-- The sidebar -->
-<!-- <div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div> -->
-
-<!-- Page content -->
-<!-- <div class="content">
-  ..
-</div> -->
-
-
-

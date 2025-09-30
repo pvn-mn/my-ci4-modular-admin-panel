@@ -5,7 +5,9 @@ namespace Modules\Auth\Controllers;
 use App\Controllers\BaseController;
 
 use CodeIgniter\HTTP\RedirectResponse;
-use App\Models\UserModel;
+
+
+use Modules\Auth\Models\UserModel;
 
 
 class Auth_Controllers extends BaseController
@@ -68,6 +70,7 @@ class Auth_Controllers extends BaseController
                 'name' => $this->request->getPost('name'),
                 'email' => $this->request->getPost('email'),
                 'password_hash' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+                'role' => 'user' 
              ];
 
             $this->userModel->save($data);
