@@ -35,8 +35,10 @@
     </div>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      <li><a href="<?= site_url('logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+
     </ul>
 
   </div>
