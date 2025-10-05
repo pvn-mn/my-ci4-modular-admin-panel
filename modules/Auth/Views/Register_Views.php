@@ -1,6 +1,5 @@
-<form action="<?= site_url('auth/register') ?>"  method="post">
-
-  <!-- < ?= csrf_field() ?> -->
+<form action="<?= site_url('register/auth') ?>"  method="post">
+  <?= csrf_field() ?>
 
   <div class="container">
     <h1>Register</h1>

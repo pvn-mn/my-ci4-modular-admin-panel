@@ -14,7 +14,7 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->group('', ['namespace' => 'Modules\User\Controllers'], function($routes) {
     $routes->get('dashboard', 'Dashboard_Controllers::index');
-    $routes->get('test', 'Dashboard_Controllers::index_test');
+    $routes->get('home', 'Dashboard_Controllers::home');
 });
 
 
@@ -22,7 +22,7 @@ $routes->group('', ['namespace' => 'Modules\User\Controllers'], function($routes
 $routes->group('', ['namespace' => 'Modules\Auth\Controllers'], function($routes) {
     $routes->get('login', 'Auth_Controllers::login');
     $routes->post('login/auth', 'Auth_Controllers::auth');
-    // $routes->get('register', 'Auth_Controllers::register');
-    // $routes->post('register/auth', 'Auth_Controllers::register');
+    $routes->get('register', 'Auth_Controllers::register');
+    $routes->post('register/auth', 'Auth_Controllers::create');
     $routes->get('logout', 'Auth_Controllers::logout');
 });

@@ -1,6 +1,5 @@
 <form action="<?= site_url('login/auth') ?>" method="post">
-
- <!-- < ?= csrf_field() ?> -->
+ <?= csrf_field() ?>
 
   <div class="container">
     <label for="email"><b>Email</b></label>

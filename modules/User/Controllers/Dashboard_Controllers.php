@@ -8,4 +8,8 @@ class Dashboard_Controllers extends BaseController{ // class name === file name 
     public function index() {
         return view('Modules\User\Views\Dashboard_Views');
     }
+
+    public function home(){
+        return view('Modules\User\Views\Home');
+    }
 }
