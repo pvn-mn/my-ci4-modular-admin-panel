@@ -15,6 +15,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->group('', ['namespace' => 'Modules\User\Controllers'], function($routes) {
     $routes->get('dashboard', 'Dashboard_Controllers::index');
     $routes->get('home', 'Dashboard_Controllers::home');
+    $routes->get('login-history', 'Dashboard_Controllers::history');
 });
 
 

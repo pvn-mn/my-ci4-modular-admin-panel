@@ -40,6 +40,12 @@ class Auth_Controllers extends BaseController
             'isLoggedIn'=> true
         ]);
 
+        $loginHistory = db_connect()->table('login_history');
+        
+        $loginHistory->insert([
+            'user_id' => $user['id'],
+        ]);
+
         return redirect()->to('/dashboard');
     }
 

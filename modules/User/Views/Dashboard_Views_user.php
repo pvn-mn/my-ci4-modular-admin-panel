@@ -77,9 +77,9 @@
       <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="<?= site_url('login-history') ?>">User history</a></li>
+        <!-- <li><a href="< ?= site_url('login-history') ?>">User history</a></li> -->
         <li><a href="#section3">Change password</a></li>
-        <li><a href="#section3">Edit user</a></li>
+        <!-- <li><a href="#section3">Edit user</a></li> -->
       </ul><br>
     </div>
     <br>
@@ -117,45 +117,6 @@
           </div>
         </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-            <p>Text</p> 
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p> 
-          </div>
-        </div>
-      </div>
-
 
     </div>
   </div>
