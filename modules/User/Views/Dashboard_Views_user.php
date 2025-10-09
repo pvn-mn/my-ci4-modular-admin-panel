@@ -79,7 +79,7 @@
         <li class="active"><a href="#section1">Dashboard</a></li>
         <!-- <li><a href="< ?= site_url('login-history') ?>">User history</a></li> -->
         <li><a href="#section3">Change password</a></li>
-        <!-- <li><a href="#section3">Edit user</a></li> -->
+        <li><a href="<?= site_url('edit/' . session()->get('user_id')) ?>">Edit user</a></li>
       </ul><br>
     </div>
     <br>

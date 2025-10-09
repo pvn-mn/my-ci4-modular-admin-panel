@@ -81,4 +81,43 @@ class Auth_Controllers extends BaseController
         session()->destroy();
         return redirect()->to('/login')->with('success', 'ypu logged out');
     }
+
+
+    public function edit($id)
+    {
+        $userModel = new UserModel();
+        
+        $data['user'] = $userModel->find($id);
+
+        return view('Modules\Auth\Views\edit_user', $data);
+    }
+
+
+    public function update($id)
+    {
+        $userModel = new UserModel();
+
+        $rules = [
+            'email' => 'required|valid_email',
+            'password' => 'permit_empty|min_length[6]',
+        ];
+
+        if (! $this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        $data = [
+            'email' => $this->request->getPost('email'),
+        ];
+
+//password not included in $data array as if the feild is left blank the password would be saved empty into the database
+        $password = $this->request->getPost('password');
+        if (!empty($password)) {
+            $data['password_hash'] = password_hash($password, PASSWORD_DEFAULT);
+        }
+
+        $userModel->update($id, $data);
+
+        return redirect()->to('/dashboard')->with('success', 'Account updated successfully.');
+    }
 }

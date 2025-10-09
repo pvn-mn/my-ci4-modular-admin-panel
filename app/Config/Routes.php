@@ -26,4 +26,6 @@ $routes->group('', ['namespace' => 'Modules\Auth\Controllers'], function($routes
     $routes->get('register', 'Auth_Controllers::register');
     $routes->post('register/auth', 'Auth_Controllers::create');
     $routes->get('logout', 'Auth_Controllers::logout');
+    $routes->get('edit/(:num)', 'Auth_Controllers::edit/$1');
+    $routes->post('update/(:num)', 'Auth_Controllers::update/$1');
 });
