@@ -120,4 +120,31 @@ class Auth_Controllers extends BaseController
 
         return redirect()->to('/dashboard')->with('success', 'Account updated successfully.');
     }
+
+    public function manage() {
+        if (session()->get('role') !== 'admin') {
+        return redirect()->to('/dashboard')->with('error', 'Access denied');
+    }
+        $userModel = new UserModel();
+
+        $data['users'] = $userModel->findAll();
+
+        return view('Modules\Auth\Views\manage_user', $data);
+    }
+
+
+    public function promote($id){
+        $userModel = new UserModel();
+
+        $userModel->update($id, ['role' => 'admin']);
+
+        return redirect()->to('/manage-user')->with('success', 'User promoted to admin.');
+    }
+
+
+    public function delete($id) {
+        $userModel = new UserModel();
+        $userModel->delete($id);
+        return redirect()->to('/manage-user')->with('success', 'User deleted.');
+    }
 }

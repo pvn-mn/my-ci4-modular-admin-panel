@@ -11,3 +11,6 @@
     </tr>
     <?php endforeach; ?>
 </table>
+
+<br>
+<button><a href="<?= site_url('/dashboard'); ?>">Go back</a></button>

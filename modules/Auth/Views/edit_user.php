@@ -11,3 +11,6 @@
 
   <button type="submit">Save Changes</button>
 </form>
+
+<br>
+<button><a href="<?= site_url('/dashboard'); ?>">Go back</a></button>
