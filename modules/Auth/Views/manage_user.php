@@ -1,3 +1,7 @@
+<?= $this->extend('Modules\Auth\Views\layouts\main') ?>
+
+<?= $this->section('content') ?>
+
 <h2>Manage Users</h2>
 
 <table border="1" cellpadding="6" cellspacing="0">
@@ -28,4 +32,7 @@
 
 
 <br>
-<button><a href="<?= site_url('/dashboard'); ?>">Go back</a></button>
+<a href="<?= site_url('/dashboard'); ?>" ><button type="button" class="btn btn-primary">Go back</button></a>
+
+
+<?= $this->endSection() ?>

@@ -1,3 +1,7 @@
+<?= $this->extend('Modules\Auth\Views\layouts\main') ?>
+
+<?= $this->section('content') ?>
+
 <h2>Edit Account</h2>
 
 <form action="<?= site_url('update/' . session()->get('user_id')) ?>" method="post">
@@ -14,3 +18,6 @@
 
 <br>
 <button><a href="<?= site_url('/dashboard'); ?>">Go back</a></button>
+
+
+<?= $this->endSection() ?>
