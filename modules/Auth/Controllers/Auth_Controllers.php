@@ -122,9 +122,11 @@ class Auth_Controllers extends BaseController
     }
 
     public function manage() {
-        if (session()->get('role') !== 'admin') {
-        return redirect()->to('/dashboard')->with('error', 'Access denied');
-    }
+
+    //     if (session()->get('role') !== 'admin') {
+    //     return redirect()->to('/dashboard')->with('error', 'Access denied');
+    // }
+    
         $userModel = new UserModel();
 
         $data['users'] = $userModel->findAll();

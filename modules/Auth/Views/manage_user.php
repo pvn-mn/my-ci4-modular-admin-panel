@@ -1,6 +1,6 @@
-<?= $this->extend('Modules\Auth\Views\layouts\main') ?>
+<!-- < ?= $this->extend('Modules\User\Views\layouts\dashboard_layout') ?>
 
-<?= $this->section('content') ?>
+< ?= $this->section('content') ?> -->
 
 <h2>Manage Users</h2>
 
@@ -35,4 +35,4 @@
 <a href="<?= site_url('/dashboard'); ?>" ><button type="button" class="btn btn-primary">Go back</button></a>
 
 
-<?= $this->endSection() ?>
+<!-- < ?= $this->endSection() ?> -->

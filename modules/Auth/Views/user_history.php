@@ -1,6 +1,6 @@
-<?= $this->extend('Modules\Auth\Views\layouts\main') ?>
+<!-- < ?= $this->extend('Modules\User\Views\layouts\dashboard_layout') ?>
 
-<?= $this->section('content') ?>
+< ?= $this->section('content') ?> -->
 
   <body class="bg-light text-center p-4">
     <div class="container">
@@ -32,4 +32,4 @@
   
   </body>
 
-  <?= $this->endSection() ?>
+  <!-- < ?= $this->endSection() ?> -->

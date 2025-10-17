@@ -1,6 +1,6 @@
-<?= $this->extend('Modules\Auth\Views\layouts\main') ?>
+<!-- < ?= $this->extend('Modules\User\Views\layouts\dashboard_layout') ?>
 
-<?= $this->section('content') ?>
+< ?= $this->section('content') ?> -->
 
 <h2>Edit Account</h2>
 
@@ -20,4 +20,4 @@
 <button><a href="<?= site_url('/dashboard'); ?>">Go back</a></button>
 
 
-<?= $this->endSection() ?>
+<!-- < ?= $this->endSection() ?> -->
